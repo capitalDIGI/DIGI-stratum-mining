@@ -9,10 +9,10 @@ You NEED to set the parameters in BASIC SETTINGS
 # ******************** BASIC SETTINGS ***************
 # These are the MUST BE SET parameters!
 
-CENTRAL_WALLET = 'set_valid_addresss_in_config!'                # Local coin address where money goes
+CENTRAL_WALLET = 'enter_your_valid_DIGI_address_here!'                # Local coin address where money goes
 
 COINDAEMON_TRUSTED_HOST = 'localhost'
-COINDAEMON_TRUSTED_PORT = 28332
+COINDAEMON_TRUSTED_PORT = 8137
 COINDAEMON_TRUSTED_USER = 'user'
 COINDAEMON_TRUSTED_PASSWORD = 'somepassword'
 

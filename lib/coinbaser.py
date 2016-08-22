@@ -29,7 +29,7 @@ class SimpleCoinbaser(object):
         d.addErrback(self._failure)
 
     def address_check(self, result):
-        if result['isvalid'] and result['ismine']:
+#        if result['isvalid'] and result['ismine']:
             self.is_valid = True
             log.info("Coinbase address '%s' is valid" % self.address)
             if 'address' in result:
@@ -46,20 +46,20 @@ class SimpleCoinbaser(object):
                self.address = result['address']
                self.on_load.callback(True)
 
-        elif result['isvalid'] and settings.ALLOW_NONLOCAL_WALLET == True :
-             self.is_valid = True
-             log.warning("!!! Coinbase address '%s' is valid BUT it is not local" % self.address)
-             if 'pubkey' in result:
-               log.debug("PubKey = %s " % result['pubkey'])
-               self.pubkey = result['pubkey']
-             if 'account' in result:
-               log.debug("Account = %s " % result['account'])
-             if not self.on_load.called:
-                    self.on_load.callback(True)
+#        elif result['isvalid'] and settings.ALLOW_NONLOCAL_WALLET == True :
+#             self.is_valid = True
+#             log.warning("!!! Coinbase address '%s' is valid BUT it is not local" % self.address)
+#             if 'pubkey' in result:
+#               log.debug("PubKey = %s " % result['pubkey'])
+#               self.pubkey = result['pubkey']
+#             if 'account' in result:
+#               log.debug("Account = %s " % result['account'])
+#             if not self.on_load.called:
+#                    self.on_load.callback(True)
 
-        else:
-            self.is_valid = False
-            log.error("Coinbase address '%s' is NOT valid!" % self.address)
+#        else:
+#            self.is_valid = False
+#            log.error("Coinbase address '%s' is NOT valid!" % self.address)
         
         #def on_new_block(self):
     #    pass
