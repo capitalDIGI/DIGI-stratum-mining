@@ -61,6 +61,7 @@ Other coins have been known to work with this implementation. I have tested with
 * Franko
 * Quark
 * Securecoin
+* DIGI
 
 #Installation
 
