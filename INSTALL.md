@@ -1,8 +1,12 @@
 
 Edit conf/config.py and sql/data.sql change at least:
+
 CENTRAL_WALLET - DIGI address
+
 COINDAEMON_TRUSTED_USER - DIGI rpc user
+
 COINDAEMON_TRUSTED_PASSWORD - DIGI rpc password
+
 DB_MYSQL_PASS to match password in sql/data.sql file.
 
 On Debian:
