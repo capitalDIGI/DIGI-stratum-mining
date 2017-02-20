@@ -11,7 +11,7 @@ DB_MYSQL_PASS to match password in sql/data.sql file.
 
 On Debian:
 
-apt-get install git mysql-server python python-twisted python-mysqldb python-pylibmc memchached python-pip python-simplejson
+apt-get install git mysql-server python python-twisted python-mysqldb python-pylibmc memcached python-pip python-simplejson
 
 ./update_submodules
 
